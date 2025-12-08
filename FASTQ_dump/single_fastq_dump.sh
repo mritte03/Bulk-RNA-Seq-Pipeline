@@ -7,6 +7,8 @@
 #SBATCH --job-name=fastq_dump_single
 #SBATCH --time=1-4:00:00
 #SBATCH --mem=10G
+#SBATCH -o Logs/fastq_dump_%j.out
+#SBATCH -e Logs/fastq_dump_%j.err
 
 SRR=$1
 
