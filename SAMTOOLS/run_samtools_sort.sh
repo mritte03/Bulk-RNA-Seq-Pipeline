@@ -13,6 +13,7 @@
 #SBATCH -t 1:00:00   # adjust time as needed
 
 module load samtools/1.21 || { echo "ERROR: samtools failed to load" >&2; exit 1; }
+echo "samtools/1.21 loaded successfully."
 
 shopt -s nullglob
 files=(*.Aligned.out.sam)
