@@ -47,3 +47,5 @@ do
 done
 
 echo "All SAM files have been sorted."
+
+#####################tester
