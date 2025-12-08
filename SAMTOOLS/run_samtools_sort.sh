@@ -46,4 +46,4 @@ do
         "$file"
 done
 
-echo "All SAM files have been sorted!!!!!!!!!!!!!!!."
+echo "All SAM files have been sorted."
