@@ -13,9 +13,17 @@
 #SBATCH -e Logs/htseq_%j.err
 #SBATCH -t 1-00:00:00
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate htseq_env
+### important modules ###
+module load python/3.10.4 || { echo "ERROR: Python failed to load" >&2; exit 1; }
+echo "python/3.10.4 loaded successfully."
 
+module load miniconda || { echo "ERROR: Miniconda failed to load" >&2; exit 1; }
+echo "miniconda loaded successfully."
+
+source activate htseq_env || { echo "ERROR: Failed to activate htseq_env" >&2; exit 1; }
+echo "htseq_env activated successfully."
+
+### run HTSeq ###
 SAMFILE="$1"
 GTF_FILE="$2"
 
