@@ -28,6 +28,6 @@ STAR --runMode genomeGenerate \
      --genomeDir "$INDEX_OUT_DIR" \
      --genomeFastaFiles "$FASTA" \
      --sjdbGTFfile "$GTF" \
-     --sjdbOverhang 99 \
+     --sjdbOverhang 99
 
 echo "STAR genome index generated in $INDEX_OUT_DIR"
