@@ -1,6 +1,6 @@
 #!/bin/bash
-# Takes a refernece genome index and * PAIRED-END * FASTQ file to perform STAR alignment
-# Madison Ritter, 12-8-2025
+# Runs STAR alignment for all FASTQ files in the current directory
+# Madison Ritter, 12-11-2025
 
 # DEPENDENCY: run_star_alignment_PAIRED.sh  * or *  run_star_alignment_SINGLE.sh
 # USAGE: sbatch submit_star_alignment_jobs.sh JOB_SCRIPT GENOME_INDEX
