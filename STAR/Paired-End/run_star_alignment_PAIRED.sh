@@ -24,7 +24,7 @@ echo "star/2.7.11b loaded successfully."
 
 mkdir -p SAMs
 
-filename=$(basename "$R1" _R1_001.fastq.gz)
+filename=$(basename "$R1" _L001_R1_001.fastq.gz) # in the last argument, include the non-essential filename ending
 
 echo "Aligning $filename (paired-end)..."
 
