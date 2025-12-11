@@ -21,7 +21,7 @@ FASTQ="$2"          # Single-end FASTQ file
 module load star/2.7.11b || { echo "ERROR: STAR failed to load" >&2; exit 1; }
 echo "star/2.7.11b loaded successfully."
 
-filename=$(basename "$FASTQ" .fastq)
+filename=$(basename "$FASTQ" .fastq) # in the last argument, include the non-essential filename ending
 mkdir -p "SAMs"
 
 echo "Aligning $FASTQ (single-end)..."
