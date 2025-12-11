@@ -1,8 +1,8 @@
 #!/bin/bash
-# Takes a refernece genome index and * SINGLE-END * FASTQ file to perform STAR alignment
-# Madison Ritter, 12-8-2025
+# Takes a reference genome index and * SINGLE-END * FASTQ file to perform STAR alignment
+# Madison Ritter, 12-11-2025
 
-# USAGE: sbatch run_star_alignment_SINGLE.sh GENOME_INDEX FILE.fastq
+# USAGE: sbatch run_star_alignment_SINGLE.sh GENOME_INDEX FASTQ
 # NOTE: can be used with submit_star_alignment_jobs.sh to run EACH FASTQ as a separate slurm job
 # NOTE: be sure to work in the directory containing the FASTQ files
 
