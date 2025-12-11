@@ -12,8 +12,8 @@
 #SBATCH --mem=64G
 #SBATCH -t 4:00:00
 #SBATCH --job-name=star_single_end
-#SBATCH -o Logs/star_%x_%A.out
-#SBATCH -e Logs/star_%x_%A.err
+#SBATCH -o Logs/%x_%A.out
+#SBATCH -e Logs/%x_%A.err
 
 GENOME_INDEX="$1"      # STAR genome index
 FASTQ="$2"          # Single-end FASTQ file
