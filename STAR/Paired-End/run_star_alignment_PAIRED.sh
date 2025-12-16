@@ -1,6 +1,6 @@
 #!/bin/bash
 # Takes a reference genome index and * PAIRED-END * FASTQ file to perform STAR alignment
-# Madison Ritter, 12-11-2025
+# Madison Ritter, 12-16-2025
 
 # USAGE: sbatch run_star_alignment_PAIRED.sh GENOME_INDEX READ_1.fqz READ_2.fq.gz
 # NOTE: use submit_star_alignment_jobs_PAIRED.sh to run EACH FASTQ read pair as a separate slurm job
@@ -24,7 +24,8 @@ echo "star/2.7.11b loaded successfully."
 
 mkdir -p SAMs
 
-filename=$(basename "$R1" _L001_R1_001.fastq.gz) # in the last argument, include the non-essential filename ending
+### NOTE: CHANGE THE FOLLOWING LINE TO REFLECT YOUR FILE FORMAT
+filename="${R1%.R1.fq}" # in the last argument, include the non-essential filename ending
 
 echo "Aligning $filename (paired-end)..."
 
