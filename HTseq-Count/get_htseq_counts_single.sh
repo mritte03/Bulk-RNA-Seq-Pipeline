@@ -14,7 +14,7 @@
 #SBATCH -t 1-00:00:00
 
 ### important modules ###
-module load python/3.10.4 || { echo "ERROR: Python failed to load" >&2; exit 1; }
+module spider python/3.10.4 || { echo "ERROR: Python failed to load" >&2; exit 1; }
 echo "python/3.10.4 loaded successfully."
 
 module load miniconda || { echo "ERROR: Miniconda failed to load" >&2; exit 1; }
