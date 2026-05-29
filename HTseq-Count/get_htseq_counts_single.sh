@@ -17,7 +17,7 @@
 module spider python/3.10.4 || { echo "ERROR: Python failed to load" >&2; exit 1; }
 echo "python/3.10.4 loaded successfully."
 
-module load miniconda || { echo "ERROR: Miniconda failed to load" >&2; exit 1; }
+module spider miniconda || { echo "ERROR: Miniconda failed to load" >&2; exit 1; }
 echo "miniconda loaded successfully."
 
 source activate htseq_env || { echo "ERROR: Failed to activate htseq_env" >&2; exit 1; }
